@@ -44,7 +44,7 @@
   <sup>
     https://github.com/purelledhand/sq-intern-practice-ground/blob/master/gerrit/README.md <br />
     모노레포기반에 브랜치를 따지 않으며 gerrit 기반으로 코드리뷰를 진행하는 환경에 적응하면서 겪은 이슈들을 위 링크에 정리해 놓았다. <br /> 
-    정리한 이슈들 🐥
+    정리한 이슈들 🐥 <br />
     1. Gerrit 및 Jenkins 환경 정리 <br />
     2. Relation Chain과 Jenkins 배포 관련 이슈 <br />
     3. 로컬에서 쌓인 Relation Chain 비우기 <br />
