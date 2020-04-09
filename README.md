@@ -42,11 +42,12 @@
   <br />
   <br />
   <sup>
-    당시 CL: Add addUser form dialog component in Users page <br />
-    이 곳은 gerrit 기반으로 코드 리뷰를 진행한다. git-review를 통해서 올린 커밋이 gerrit에 반영되어 코드리뷰를 진행하고, +2점을 받으면 리모트에 서밋이 되는 구조이며 gerrit에 푸시되는 커밋들은 모두 master 브랜치로 커밋된다. <br />
-    코드리뷰 중 받은 커멘트들에 대해서는 해당 CL의 패치셋을 업로드하여 반영해야 하는데, git-review를 통해 커밋들을 dependency하게 푸시하면 독립적인 다른 커밋을 올리더라도 엮여있는 커밋들이 함께 패치되어 곤란해지는 상황이 생겨버린다. <br />
-    이미 gerrit에 올라간 커밋에 대해서는 체리픽이 간단하지만, 로컬 커밋들에 대해서 relation chain을 어떻게 끊어야 할지 모르겠다.. 그래서 지금 CL이 git review [-R]해도 이미 올라간 CL들도 함께 올려지려 해서 못올리고 있담.. <br />
-    git-review에서 outstanding commits에 대한 기준을 어떻게 잡는건지 궁금해서 docs와 구글링을 해보고 있는데 못찾는중 <br />
+    https://github.com/purelledhand/sq-intern-practice-ground/blob/master/gerrit/README.md <br />
+    모노레포기반에 브랜치를 따지 않으며 gerrit 기반으로 코드리뷰를 진행하는 환경에 적응하면서 겪은 이슈들을 위 링크에 정리해 놓았다. <br /> 
+    정리한 이슈들 🐥
+    1. Gerrit 및 Jenkins 환경 정리 <br />
+    2. Relation Chain과 Jenkins 배포 관련 이슈 <br />
+    3. 로컬에서 쌓인 Relation Chain 비우기 <br />
   </sup>
 </div>
 <br />
