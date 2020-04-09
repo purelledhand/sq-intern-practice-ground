@@ -38,7 +38,7 @@
 <br />
 <br />
 <div>
-  CherryPick🍒
+  Gerrit
   <br />
   <br />
   <sup>
