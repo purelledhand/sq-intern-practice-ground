@@ -47,6 +47,9 @@
     코드리뷰 중 받은 커멘트들에 대해서는 해당 CL의 패치셋을 업로드하여 반영해야 하는데, git-review를 통해 커밋들을 dependency하게 푸시하면 독립적인 다른 커밋을 올리더라도 엮여있는 커밋들이 함께 패치되어 곤란해지는 상황이 생겨버린다. <br />
     이미 gerrit에 올라간 커밋에 대해서는 체리픽이 간단하지만, 로컬 커밋들에 대해서 relation chain을 어떻게 끊어야 할지 모르겠다.. 그래서 지금 CL이 git review [-R]해도 이미 올라간 CL들도 함께 올려지려 해서 못올리고 있담.. <br />
     git-review에서 outstanding commits에 대한 기준을 어떻게 잡는건지 궁금해서 docs와 구글링을 해보고 있는데 못찾는중 <br />
+    <br />
+    https://stackoverflow.com/questions/19768959/how-to-review-a-specific-commit-on-git <br />
+    대부분의 레퍼런스들은 branch를 통해서 끊는 방법을 얘기하는데 시니어분들 보면 브랜치 없이 master에서 dependency없게 휙휙 푸시하시던데 어떻게 하는건지 궁금하다ㅠㅠ
   </sup>
 </div>
 <br />
