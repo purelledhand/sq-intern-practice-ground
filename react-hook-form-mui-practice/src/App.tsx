@@ -1,11 +1,11 @@
 import React from 'react';
-import Auth from 'pages/Auth';
+import Basic from 'pages/Basic';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Auth />
+      <Basic />
     </div>
   );
 }
