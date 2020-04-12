@@ -30,6 +30,7 @@ const Auth: React.FC = () => {
       <TextField
         name="email"
         label="Standard"
+        required
         inputRef={register({
           required: 'Required',
           pattern: {
@@ -41,8 +42,17 @@ const Auth: React.FC = () => {
       {errors.email && errors.email.message}
 
       <TextField
+        name="username"
+        label="username"
+        type="name"
+        required
+      />
+
+      <TextField
+        name="password"
         label="password"
         type="password"
+        required
       />
 
       <Button className={classes.button} type="submit" color="primary">Submit</Button>
