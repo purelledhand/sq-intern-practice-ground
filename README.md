@@ -28,7 +28,7 @@
   <br />
   <br />
   <sup>
-    당시 CL: Routing code base restructuring <br />
+    CL: Routing code base restructuring <br />
     스터디: 작업 중 TS object 참조 관련 에러 핸들링 <br />
     https://cheatsheets.joshuatz.com/cheatsheets/typescript/ <br />
     TS Error 핸들링 중 Top-down식 대처말고 Bottom-up으로 제대로 공부해야겠다는 생각이 들어서 스터디 시작 <br />
@@ -57,11 +57,23 @@
   <br />
   <br />
   <sup>
-    당시 CL: Add AddUserDialog Component in Users page <br />
+    CL: Add AddUserDialog Component in Users page <br />
     새로 맡고 있는 업무에서 form과 관련하여 react-hook-form 라이브러리 도입을 제안했다. <br />
     다양한 handler 함수들을 useForm 훅을 통해 제공해주기도 하고, Typescript으로 제작되어서 폼 내 각 value type에 대해 typesafe하게 사용할 수 있으며 렌더링 횟수 및 마운트 시간도 다른 라이브러리에 비해 훨씬 잘 최적화되어있기 때문이다. <br />
     시니어 엔지니어 분께서는 개발이 간편해지는 이점이 있다면 찬성하지만, 해당 프로젝트에서 사용하고 있는 MUI 컴포넌트와 함께 사용하는 데에도 지장이 없는지 여쭤보셨다. <br />
     그래서 MUI 컴포넌트 폼과 react-hook-form 사용이 용이한지 확인해보는 테스트용 프로젝트 <br />
+  </sup>
+</div>
+<br />
+<br />
+<div>
+  Snackbar, notistack
+  <br />
+  <br />
+  <sup>
+    CL: Add Snackbar component and use-case in login page <br />
+    snackbar 또는 toast를 쌓아서 디스플레이할 수 있도록 도와주는 커스텀 라이브러리 notistack을 사용하여 컴포넌트화했다. <br />
+    https://iamhosseindhv.com/notistack <br />
   </sup>
 </div>
 <br />
