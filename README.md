@@ -86,6 +86,9 @@
     Example for protobuf for js to json. <br />
     1. get fake api using protobuf, grpc <br />
     2. get json data <br />
+    
+    $ pbjs --keep-case -t static-module -w es6 -o src/model/proto/index.js externalProto/**/*.proto && pbts -o src/model/proto/index.d.ts src/model/proto/index.js
+
   </sup>
 </div>
 <br />
