@@ -53,15 +53,19 @@
 <br />
 <br />
 <div>
-  react-hook-form-mui-practice (React-Hook-Form + MUI 도입 안정성 테스트)
+  react-hook-form을 이용한 폼 유효성 검증<br />
+  React-Hook-Form + MUI 도입 안정성 테스트)
   <br />
   <br />
   <sup>
     CL: Add AddUserDialog Component in Users page <br />
     새로 맡고 있는 업무에서 form과 관련하여 react-hook-form 라이브러리 도입을 제안했다. <br />
-    다양한 handler 함수들을 useForm 훅을 통해 제공해주기도 하고, Typescript으로 제작되어서 폼 내 각 value type에 대해 typesafe하게 사용할 수 있으며 렌더링 횟수 및 마운트 시간도 다른 라이브러리에 비해 훨씬 잘 최적화되어있기 때문이다. <br />
+    다양한 handler 함수들을 useForm 훅을 통해 제공해주기도 하고, Typescript으로 제작되어서 폼 내 각 value type에 대해 typesafe하게 사용할 수 있으며 렌더링 횟수 및 마운트 시간도 다른 라이브러리에 비해 훨씬 잘 최적화되어있기 때문이다.<br />
     시니어 엔지니어 분께서는 개발이 간편해지는 이점이 있다면 찬성하지만, 해당 프로젝트에서 사용하고 있는 MUI 컴포넌트와 함께 사용하는 데에도 지장이 없는지 여쭤보셨다. <br />
-    그래서 MUI 컴포넌트 폼과 react-hook-form 사용이 용이한지 확인해보는 테스트용 프로젝트 <br />
+    Contents <br />
+    1. 그래서 MUI 컴포넌트 폼과 react-hook-form 사용이 용이한지 확인해보는 테스트용 프로젝트 <br />
+    2. native select tag에 inputRef가 직접 적용되지 않는 MUI select 태그에서 value값을 register하고 상태관리 없이 효율적으로 관리하는 법 <br />
+    3. password validation <br />
   </sup>
 </div>
 <br />
