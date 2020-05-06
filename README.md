@@ -83,13 +83,12 @@
 <br />
 <br />
 <div>
-  Protobuf to JSON
+  gRPC 환경에서 protobufjs 사용하기
   <br />
   <br />
   <sup>
-    Example for protobuf for js to json. <br />
-    1. get fake api using protobuf, grpc <br />
-    2. get json data <br />
+    이 곳은 서버 환경이 MSA로 구성되어 있어서 internal 통신의 속도 향상을 위해 gRPC를 사용한다. 때문에 클라이언트도 protobuf 기반으로 통신을 하는데, 서버에서 gRPC-gateway를 제공하기 때문에 JSON으로도 통신이 가능하다. 현재 개발중인 서비스는 백오피스 서비스이기 때문에 통신 속도의 중요성이 다른 프로덕트들에 비해서 낮은 편이라 JSON으로 서버에 요청하기로 설계되었는데, xprotobuf/JSON 등의 요청 포맷뿐만이 아니라 TypeScript 제너릭 사용 등에도 protobuf가 사용되었다. gRPC로 JSON을 요청하고 따로 protobuf를 사용하는 경우에는 통신 속도에는 전혀 이점이 없는데, 왜 protobuf가 사용되는지 궁금했다. 가장 큰 이유는 IDL 정의와 서버에서 사용하는 정의를 클라이언트에서도 공통적으로 사용하여 source of truth를 하나로 관리하기 위함이었다. 추가로 TypeScript와 함께 쓰는데 있어 정말 좋은 조합이라고 생각된다. 
+    yarn protoc 커맨드에 아래 스크립트를 넣어주고, smoke, deploy, test 커맨드에 yarn protoc를 추가시켜주었다. 
     
     $ pbjs --keep-case -t static-module -w es6 -o src/model/proto/index.js externalProto/**/*.proto && pbts -o src/model/proto/index.d.ts src/model/proto/index.js
 
